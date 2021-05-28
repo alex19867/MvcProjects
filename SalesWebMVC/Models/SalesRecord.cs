@@ -5,7 +5,13 @@ namespace SalesWebMVC.Models
 {
     public class SalesRecord
     {
-        public int Id { get; set; }
+        //private int v1;
+        //private DateTime dateTime;
+        //private double v2;
+        //private SaleStatus billed;
+        //private Seller s1;
+
+        public int id { get; set; }
         public DateTime Date{ get; set; }
         public double Amount { get; set; }
         public SaleStatus Status { get; set; }
@@ -15,12 +21,15 @@ namespace SalesWebMVC.Models
 
         }
 
-        public SalesRecord(DateTime date, double amount, SaleStatus status, Seller seller)
+        public SalesRecord(int id, DateTime date, double amount, SaleStatus status, Seller seller)
         {
             Date = date;
             Amount = amount;
             Status = status;
             Seller = seller;
         }
+
+      
+
     }
 }
