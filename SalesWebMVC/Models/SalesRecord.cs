@@ -11,7 +11,7 @@ namespace SalesWebMVC.Models
         //private SaleStatus billed;
         //private Seller s1;
 
-        public int id { get; set; }
+        public int Id { get; set; }
         public DateTime Date{ get; set; }
         public double Amount { get; set; }
         public SaleStatus Status { get; set; }
@@ -23,6 +23,7 @@ namespace SalesWebMVC.Models
 
         public SalesRecord(int id, DateTime date, double amount, SaleStatus status, Seller seller)
         {
+            Id = id;
             Date = date;
             Amount = amount;
             Status = status;

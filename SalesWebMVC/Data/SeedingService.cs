@@ -43,7 +43,7 @@ namespace SalesWebMVC.Data
 
 
             _context.Department.AddRange(d1, d2, d3, d4);
-            _context.Seller.AddRange(s1, s2, s3, s4, s5);
+            _context.Seller.AddRange(s1, s2, s3, s4, s5, s6);
             _context.SalesRecord.AddRange(sr1, sr2, sr3, sr4, sr5);
 
             _context.SaveChanges();
